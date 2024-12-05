@@ -1,0 +1,334 @@
+2024-10-17 00:25:27,115 lib.lichess_bot (lichess_bot.py:1194) INFO 
+    .   _/|
+    .  // o\
+    .  || ._)  lichess-bot 2024.10.14.1 on Windows 10
+    .  //__\
+    .  )___(   Play on Lichess with a bot
+    
+2024-10-17 00:25:27,175 lib.config (config.py:262) DEBUG Config:
+token: logger
+url: https://lichess.org/
+engine:
+  dir: ./engines/
+  name: nami.exe
+  working_dir: ''
+  protocol: uci
+  ponder: true
+  polyglot:
+    enabled: false
+    book:
+      standard:
+      - engines/book1.bin
+      - engines/book2.bin
+    min_weight: 1
+    selection: weighted_random
+    max_depth: 30
+  draw_or_resign:
+    resign_enabled: false
+    resign_score: -1000
+    resign_for_egtb_minus_two: true
+    resign_moves: 3
+    offer_draw_enabled: true
+    offer_draw_score: 0
+    offer_draw_for_egtb_zero: true
+    offer_draw_moves: 10
+    offer_draw_pieces: 10
+  online_moves:
+    max_out_of_book_moves: 10
+    max_retries: 2
+    chessdb_book:
+      enabled: false
+      min_time: 20
+      move_quality: best
+      min_depth: 25
+    lichess_cloud_analysis:
+      enabled: false
+      min_time: 20
+      move_quality: best
+      max_score_difference: 50
+      min_depth: 25
+      min_knodes: 0
+    lichess_opening_explorer:
+      enabled: false
+      min_time: 20
+      source: masters
+      player_name: ''
+      sort: winrate
+      min_games: 10
+    online_egtb:
+      enabled: false
+      min_time: 20
+      max_pieces: 7
+      source: lichess
+      move_quality: best
+  lichess_bot_tbs:
+    syzygy:
+      enabled: false
+      paths:
+      - engines/syzygy
+      max_pieces: 7
+      move_quality: best
+    gaviota:
+      enabled: false
+      paths:
+      - engines/gaviota
+      max_pieces: 5
+      min_dtm_to_consider_as_wdl_1: 120
+      move_quality: best
+  homemade_options: null
+  silence_stderr: false
+abort_time: 30
+fake_think_time: false
+rate_limiting_delay: 0
+move_overhead: 2000
+max_takebacks_accepted: 0
+quit_after_all_games_finish: false
+correspondence:
+  move_time: 60
+  checkin_period: 300
+  disconnect_time: 150
+  ponder: false
+challenge:
+  concurrency: 1
+  sort_by: best
+  preference: none
+  accept_bot: true
+  only_bot: false
+  max_increment: 20
+  min_increment: 0
+  max_base: 1800
+  min_base: 0
+  max_days: 14
+  min_days: 1
+  variants:
+  - standard
+  time_controls:
+  - bullet
+  - blitz
+  - rapid
+  - classical
+  modes:
+  - casual
+  - rated
+  bullet_requires_increment: false
+greeting:
+  hello: Hi! I'm {me}. Challenge me anytime you want.
+  goodbye: Thanks for playing!
+  hello_spectators: Hi! I'm {me}. Challenge me anytime you want.
+  goodbye_spectators: Thanks for watching!
+  pgn_directory: game_records
+  pgn_file_grouping: all
+matchmaking:
+  allow_matchmaking: true
+  allow_during_games: false
+  challenge_variant: random
+  challenge_timeout: 30
+  challenge_initial_time:
+  - 60
+  - 180
+  challenge_increment:
+  - 1
+  - 2
+  opponent_rating_difference: 300
+  rating_preference: none
+  opponent_allow_tos_violation: false
+  challenge_mode: random
+  challenge_filter: none
+  include_challenge_block_list: false
+
+2024-10-17 00:25:27,176 lib.config (config.py:263) DEBUG ====================
+2024-10-17 00:25:27,186 lib.config (config.py:262) DEBUG Config:
+token: logger
+url: https://lichess.org/
+engine:
+  dir: ./engines/
+  name: nami.exe
+  working_dir: D:\doc\pissedproj\lichess-bot
+  protocol: uci
+  ponder: true
+  polyglot:
+    enabled: false
+    book:
+      standard:
+      - engines/book1.bin
+      - engines/book2.bin
+    min_weight: 1
+    selection: weighted_random
+    max_depth: 30
+  draw_or_resign:
+    resign_enabled: false
+    resign_score: -1000
+    resign_for_egtb_minus_two: true
+    resign_moves: 3
+    offer_draw_enabled: true
+    offer_draw_score: 0
+    offer_draw_for_egtb_zero: true
+    offer_draw_moves: 10
+    offer_draw_pieces: 10
+  online_moves:
+    max_out_of_book_moves: 10
+    max_retries: 2
+    chessdb_book:
+      enabled: false
+      min_time: 20
+      move_quality: best
+      min_depth: 25
+    lichess_cloud_analysis:
+      enabled: false
+      min_time: 20
+      move_quality: best
+      max_score_difference: 50
+      min_depth: 25
+      min_knodes: 0
+    lichess_opening_explorer:
+      enabled: false
+      min_time: 20
+      source: masters
+      player_name: ''
+      sort: winrate
+      min_games: 10
+    online_egtb:
+      enabled: false
+      min_time: 20
+      max_pieces: 7
+      source: lichess
+      move_quality: best
+    max_depth: .inf
+  lichess_bot_tbs:
+    syzygy:
+      enabled: false
+      paths:
+      - engines/syzygy
+      max_pieces: 7
+      move_quality: best
+    gaviota:
+      enabled: false
+      paths:
+      - engines/gaviota
+      max_pieces: 5
+      min_dtm_to_consider_as_wdl_1: 120
+      move_quality: best
+  homemade_options: null
+  silence_stderr: false
+  interpreter: null
+  interpreter_options: []
+  uci_ponder: false
+abort_time: 30
+fake_think_time: false
+rate_limiting_delay: 0
+move_overhead: 2000
+max_takebacks_accepted: 0
+quit_after_all_games_finish: false
+correspondence:
+  move_time: 60
+  checkin_period: 300
+  disconnect_time: 150
+  ponder: false
+  uci_ponder: false
+challenge:
+  concurrency: 1
+  sort_by: best
+  preference: none
+  accept_bot: true
+  only_bot: false
+  max_increment: 20
+  min_increment: 0
+  max_base: 1800
+  min_base: 0
+  max_days: 14
+  min_days: 1
+  variants:
+  - standard
+  time_controls:
+  - bullet
+  - blitz
+  - rapid
+  - classical
+  modes:
+  - casual
+  - rated
+  bullet_requires_increment: false
+  block_list: []
+  allow_list: []
+greeting:
+  hello: Hi! I'm {me}. Challenge me anytime you want.
+  goodbye: Thanks for playing!
+  hello_spectators: Hi! I'm {me}. Challenge me anytime you want.
+  goodbye_spectators: Thanks for watching!
+  pgn_directory: game_records
+  pgn_file_grouping: all
+matchmaking:
+  allow_matchmaking: true
+  allow_during_games: false
+  challenge_variant: random
+  challenge_timeout: 30
+  challenge_initial_time:
+  - 60
+  - 180
+  challenge_increment:
+  - 1
+  - 2
+  opponent_rating_difference: 300
+  rating_preference: none
+  opponent_allow_tos_violation: false
+  challenge_mode: random
+  challenge_filter: none
+  include_challenge_block_list: false
+  block_list: []
+  challenge_days:
+  - null
+  opponent_min_rating: 600
+  opponent_max_rating: 4000
+  overrides: {}
+pgn_directory: null
+pgn_file_grouping: game
+
+2024-10-17 00:25:27,186 lib.config (config.py:263) DEBUG ====================
+2024-10-17 00:25:27,187 lib.lichess_bot (lichess_bot.py:1197) INFO Checking engine configuration ...
+2024-10-17 00:25:27,189 lib.engine_wrapper (engine_wrapper.py:69) DEBUG Starting engine: ['D:\\doc\\pissedproj\\lichess-bot\\engines\\nami.exe']
+2024-10-17 00:25:27,190 asyncio (proactor_events.py:633) DEBUG Using proactor: IocpProactor
+2024-10-17 00:25:27,199 chess.engine (engine.py:928) DEBUG <UciProtocol (pid=45892)>: Connection made
+2024-10-17 00:25:27,199 chess.engine (engine.py:950) DEBUG <UciProtocol (pid=45892)>: << uci
+2024-10-17 00:25:27,367 chess.engine (engine.py:976) DEBUG <UciProtocol (pid=45892)>: >> id name Nami
+2024-10-17 00:25:27,367 chess.engine (engine.py:976) DEBUG <UciProtocol (pid=45892)>: >> option name QS type spin default 40 min 0 max 300
+2024-10-17 00:25:27,367 chess.engine (engine.py:976) DEBUG <UciProtocol (pid=45892)>: >> option name QS_A type spin default 140 min 0 max 300
+2024-10-17 00:25:27,368 chess.engine (engine.py:976) DEBUG <UciProtocol (pid=45892)>: >> option name EVAL_ROUGHNESS type spin default 15 min 0 max 50
+2024-10-17 00:25:27,368 chess.engine (engine.py:976) DEBUG <UciProtocol (pid=45892)>: >> uciok
+2024-10-17 00:25:27,373 chess.engine (engine.py:950) DEBUG <UciProtocol (pid=45892)>: << isready
+2024-10-17 00:25:27,373 chess.engine (engine.py:976) DEBUG <UciProtocol (pid=45892)>: >> readyok
+2024-10-17 00:25:27,374 chess.engine (engine.py:950) DEBUG <UciProtocol (pid=45892)>: << quit
+2024-10-17 00:25:27,422 chess.engine (engine.py:947) DEBUG <UciProtocol (pid=45892)>: Process exited
+2024-10-17 00:25:27,423 chess.engine (engine.py:934) DEBUG <UciProtocol (pid=45892)>: Connection lost (exit code: 0, error: None)
+2024-10-17 00:25:27,423 lib.lichess_bot (lichess_bot.py:1200) INFO Engine configuration OK
+2024-10-17 00:25:27,428 lib.lichess_bot (lichess_bot.py:1170) DEBUG Python version: 3.11.9.final.0
+2024-10-17 00:25:27,502 lib.lichess_bot (lichess_bot.py:1176) DEBUG Installed libraries:
+altgraph==0.17.4
+backoff==2.2.1
+certifi==2024.8.30
+charset-normalizer==3.4.0
+chess==1.11.1
+idna==3.10
+markdown-it-py==3.0.0
+mdurl==0.1.2
+numpy==2.1.2
+packaging==24.1
+pefile==2024.8.26
+pip==23.2.1
+Pygments==2.18.0
+pyinstaller==6.10.0
+pyinstaller-hooks-contrib==2024.8
+pywin32-ctypes==0.2.3
+PyYAML==6.0.2
+requests==2.32.3
+rich==13.9.2
+setuptools==68.2.0
+tqdm==4.57.0
+urllib3==2.2.3
+wheel==0.41.2
+
+
+2024-10-17 00:25:27,504 urllib3.connectionpool (connectionpool.py:1051) DEBUG Starting new HTTPS connection (1): lichess.org:443
+2024-10-17 00:25:27,949 urllib3.connectionpool (connectionpool.py:546) DEBUG https://lichess.org:443 "POST /api/token/test HTTP/11" 200 None
+2024-10-17 00:25:28,101 urllib3.connectionpool (connectionpool.py:546) DEBUG https://lichess.org:443 "GET /api/account HTTP/11" 200 None
+2024-10-17 00:25:28,102 lib.lichess_bot (lichess_bot.py:1210) INFO Welcome zoro25bot!
+2024-10-17 00:25:28,104 lib.lichess_bot (lichess_bot.py:273) INFO You're now connected to https://lichess.org/ and awaiting challenges.
